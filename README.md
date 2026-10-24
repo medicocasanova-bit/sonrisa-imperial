@@ -14,9 +14,12 @@ Landing page de la clínica dental **Sonrisa Imperial**. Su único objetivo es q
 
 Abre `index.html` en tu navegador. No necesita instalar nada.
 
+## Agendar citas
+
+Al enviar el formulario se abre WhatsApp con la solicitud lista. El número de la clínica se cambia en `js/main.js` (`WHATSAPP_NUMERO`).
+
 ## Pendiente
 
-- Conectar el formulario para que las solicitudes lleguen a la clínica (correo, WhatsApp o Calendly).
 - Reemplazar la foto de Unsplash por fotos propias de la clínica.
 
 ## Créditos
