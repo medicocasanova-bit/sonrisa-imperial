@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonrisa Imperial · Clínica Dental</title>
+  <meta name="description" content="Sonrisa Imperial, clínica dental. Agenda tu cita en menos de un minuto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#" class="brand" aria-label="Sonrisa Imperial">
+        <svg viewBox="0 0 32 32" fill="none" stroke="#a8864a" stroke-width="1.6" stroke-linejoin="round">
+          <path d="M6 12l4 4 6-8 6 8 4-4-2 12H8L6 12z"/>
+          <path d="M8 27h16"/>
+        </svg>
+        Sonrisa Imperial
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Clínica dental</span>
+        <h1>La sonrisa que <em>mereces</em>, con el cuidado que esperas.</h1>
+        <p class="lead">Odontología general y estética con atención personalizada. Agenda tu cita y nosotros nos encargamos del resto.</p>
+        <ul class="points">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Primera valoración sin costo
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Especialistas certificados
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Horarios flexibles, incluso sábados
+          </li>
+        </ul>
+        <figure class="photo">
+          <img src="https://images.unsplash.com/photo-1777331903190-341a3dd0441b?w=1200&q=80&auto=format&fit=crop"
+               alt="Dentista conversando con una paciente en un consultorio moderno y luminoso"
+               loading="lazy">
+        </figure>
+      </div>
+
+      <div class="card" id="agendar">
+        <div id="form-wrap">
+          <h2>Agenda tu cita</h2>
+          <p class="sub">Te confirmamos en menos de 24 horas.</p>
+
+          <form id="booking-form">
+            <div class="field">
+              <label for="nombre">Nombre completo</label>
+              <input id="nombre" name="nombre" type="text" required autocomplete="name">
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" name="telefono" type="tel" required autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="email">Correo</label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="field">
+              <label for="servicio">Motivo de la cita</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option>Valoración general</option>
+                <option>Limpieza dental</option>
+                <option>Blanqueamiento</option>
+                <option>Ortodoncia</option>
+                <option>Implantes</option>
+                <option>Urgencia</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="fecha">Fecha preferida</label>
+                <input id="fecha" name="fecha" type="date" required>
+              </div>
+              <div class="field">
+                <label for="hora">Horario</label>
+                <select id="hora" name="hora" required>
+                  <option value="" disabled selected>Elige</option>
+                  <option>Mañana</option>
+                  <option>Tarde</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit">Solicitar cita</button>
+            <p class="note">Tus datos se usan solo para agendar tu cita.</p>
+          </form>
+        </div>
+
+        <div class="success" id="success" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M16 9l-5 6-3-3"/></svg>
+          <h2>¡Solicitud enviada!</h2>
+          <p>Gracias, <span id="success-name"></span>. Te contactaremos pronto para confirmar tu cita.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year"></span> Sonrisa Imperial</span>
+      <span>Lun–Sáb · 9:00–19:00</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
