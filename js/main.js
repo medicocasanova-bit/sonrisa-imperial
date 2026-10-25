@@ -25,6 +25,7 @@ document.getElementById("booking-form").addEventListener("submit", (e) => {
     `*Motivo:* ${data.servicio}`,
     `*Fecha preferida:* ${fechaLegible}`,
     `*Horario:* ${data.hora}`,
+    `*Prefiere que lo contacten por:* ${data.contacto}`,
   ].join("\n");
 
   window.open(`https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`, "_blank");
